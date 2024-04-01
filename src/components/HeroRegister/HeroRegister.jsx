@@ -4,7 +4,7 @@ import { createUserWithEmailAndPassword } from "firebase/auth";
 import auth from "../../firebase/firebase.config";
 
 const HeroRegister = () => {
-
+    
     const handleHeroRegister = e => {
         e.preventDefault();
         const email = e.target.email.value;
@@ -15,7 +15,8 @@ const HeroRegister = () => {
             console.log(result.user);
             })
             .catch(error => {
-            console.error(error.message)
+                console.error(error.message)
+                
         })
 }
 
